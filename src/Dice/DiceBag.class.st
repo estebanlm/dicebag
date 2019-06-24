@@ -7,11 +7,11 @@ Class {
 	#category : #Dice
 }
 
-{ #category : #'as yet unclassified' }
+{ #category : #'instance creation' }
 DiceBag class >> new: aNumber withAll: aDice [ 
 	
 	^ self new 
-		addAll: ((1 to: aNumber) collect: [ :each | aDice clone ]);
+		addAll: ((1 to: aNumber) collect: [ :each | aDice ]);
 		yourself
 ]
 
