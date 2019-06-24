@@ -51,7 +51,7 @@ DiceBag >> dices [
 DiceBag >> initialize [ 
 
 	super initialize.
-	dices := Set new
+	dices := OrderedCollection new
 ]
 
 { #category : #rolling }
